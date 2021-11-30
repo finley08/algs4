@@ -7,18 +7,25 @@ public class Selection {
 
     public static void sort(Comparable[] a){
 
+        { // 将a[]升序排列
         int N = a.length;
 
+        //show(a);
         for(int i= 0; i<N; i++){
-            int min = i;
+            // 将a[i]和a[i+1..N]中最小的元素交换
+            show(a);
+            int min = i;//最小元素的索引
             for(int j=i+1;j<N; j++){
+                //内部循环，找到当前最小min
                 if(less(a[j], a[min])){
                     min = j;
                 }
             }
+            //本次交换
             exch(a, i, min);
-            show(a);
         }
+        show(a);
+    }
 
     }
 
@@ -52,7 +59,9 @@ public class Selection {
     public static void main(String[] args){
         String[] ora = {"S","O","T","E"};
 
-        sort(ora);
+        String[] exer211 = {"E","A","S","Y","Q","U","E","S","T","I","O","N"};
+
+        sort(exer211);
     }
 
     

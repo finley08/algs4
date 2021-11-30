@@ -12,6 +12,7 @@ public class SortCompare {
         Stopwatch timer = new Stopwatch();
         if (alg.equals("Insertion")) Insertion.sort(a);
         if (alg.equals("Selection")) Selection.sort(a);
+        if (alg.equals("Shell")) Shell.sort(a);
         return timer.elapsedTime();
     }
 
@@ -33,8 +34,11 @@ public class SortCompare {
         int T = 10;
         Double insertionTime = timeRandomInput("Insertion", N, T);
         Double selectionTime = timeRandomInput("Selection", N, T);
+        Double shellTime = timeRandomInput("Shell", N, T);
         StdOut.printf("%s cost time %f \n","Insertion",insertionTime);
         StdOut.printf("%s cost time %f \n","Selection",selectionTime);
+        StdOut.printf("%s cost time %f \n","Shell",shellTime);
+
 
 
     }

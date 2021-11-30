@@ -12,15 +12,21 @@ public class Shell {
             h = 3*h +1;//1,4,13,40...
         }
 
+        show(a);
         while(h >=1){
+             System.out.println("current h ->"+h);
             //将数组变为h有序
             for(int i=h; i<N;i++){
+                show(a);
                 for(int j=i; j>=h&&less(a[j], a[j-h]);j=j-h){
                     exch(a, j, j-h);
                 }
+                
             }
             h = h/3;
+            
         }
+        show(a);
 
 
     }
@@ -53,6 +59,12 @@ public class Shell {
             }
         }
         return true;
+    }
+
+
+    public static void main(String[] args){
+        String[] ora = {"S","O","T","E","A","D"};
+        sort(ora);
     }
     
 }
