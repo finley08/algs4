@@ -12,7 +12,7 @@ public class Shell {
             h = 3*h +1;//1,4,13,40...
         }
 
-        show(a);
+        //show(a);
         while(h >=1){
              System.out.println("current h ->"+h);
             //将数组变为h有序
@@ -26,7 +26,7 @@ public class Shell {
             h = h/3;
             
         }
-        show(a);
+        //show(a);
 
 
     }
