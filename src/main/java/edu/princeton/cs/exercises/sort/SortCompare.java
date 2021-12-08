@@ -3,6 +3,7 @@ package edu.princeton.cs.exercises.sort;
 import edu.princeton.cs.algs4.Insertion;
 import edu.princeton.cs.algs4.Selection;
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Shell;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
@@ -30,7 +31,7 @@ public class SortCompare {
     }
 
     public static void main(String[] args){
-        int N = 100000;
+        int N = 1000000;
         int T = 10;
         Double insertionTime = timeRandomInput("Insertion", N, T);
         Double selectionTime = timeRandomInput("Selection", N, T);

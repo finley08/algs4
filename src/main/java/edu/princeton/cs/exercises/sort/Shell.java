@@ -14,7 +14,7 @@ public class Shell {
 
         //show(a);
         while(h >=1){
-             System.out.println("current h ->"+h);
+             //System.out.println("current h ->"+h);
             //将数组变为h有序
             for(int i=h; i<N;i++){
                 show(a);
